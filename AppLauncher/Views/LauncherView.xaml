@@ -12,19 +12,19 @@
                 <TextBlock Text="Launcher" FontWeight="Bold" FontSize="20" TextAlignment="Center" Margin="0,0,0,20"/>
 
                 <StackPanel Margin="0,0,0,10">
-                    <TextBlock Text="Versión instalada:" FontWeight="SemiBold"/>
+                    <TextBlock Text="Installed version:" FontWeight="SemiBold"/>
                     <TextBlock Text="{Binding InstalledVersion}" Margin="5,2,0,10"/>
 
-                    <TextBlock Text="Última versión disponible:" FontWeight="SemiBold"/>
+                    <TextBlock Text="Available update:" FontWeight="SemiBold"/>
                     <TextBlock Text="{Binding LatestVersion}" Margin="5,2,0,10"/>
                 </StackPanel>
 
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,10">
-                    <Button Content="Descargar actualización" Width="140" Command="{Binding NavigateToDownloadCommand}" Margin="0,0,10,0"/>
-                    <Button Content="Lanzar aplicación" Width="140" Command="{Binding LaunchAppCommand}"/>
+                    <Button Content="Download Update" Width="140" Command="{Binding NavigateToDownloadCommand}" Margin="0,0,10,0"/>
+                    <Button Content="Launch App" Width="140" Command="{Binding LaunchAppCommand}"/>
                 </StackPanel>
 
-                <Button Content="Cerrar sesión" Width="140" HorizontalAlignment="Center" Command="{Binding LogoutCommand}" Margin="0,10,0,0"/>
+                <Button Content="Close Session" Width="140" HorizontalAlignment="Center" Command="{Binding LogoutCommand}" Margin="0,10,0,0"/>
             </StackPanel>
         </Border>
     </Grid>
