@@ -1,4 +1,4 @@
-# AppLauncher
+# AppLauncher(Mock)
 
 A clean WPF application prototype built with **.NET 9**, implementing a modern, maintainable architecture using:
 
@@ -13,4 +13,4 @@ This project serves both as:
 - A working prototype.
 - A reference architecture for **modern WPF applications** built with clean MVVM + DI principles.
 
-➡ **Easy to replace mock services with real implementations as the project evolves.**
+➡ This project only displays a project structure in WPF and is not functional. **Easy to replace mock services with real implementations as the project evolves.**
