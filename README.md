@@ -13,4 +13,6 @@ This project serves both as:
 - A working prototype.
 - A reference architecture for **modern WPF applications** built with clean MVVM + DI principles.
 
-➡ This project only displays a project structure in WPF and is not functional. **Easy to replace mock services with real implementations as the project evolves.**
+➡ This project only displays a project structure in WPF and is not functional. 
+
+**Easy to replace mock services with real implementations as the project evolves.**
