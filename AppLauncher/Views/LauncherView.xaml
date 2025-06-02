@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="AppLauncher.Views.LauncherView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Grid FocusManager.FocusedElement="{Binding RelativeSource={RelativeSource Self}}"
+          Focusable="True"
+          FocusManager.IsFocusScope="True">
+        <Border Padding="20" CornerRadius="8" Background="#F8F8F8" BorderBrush="#DDD" BorderThickness="1"
+                VerticalAlignment="Center" HorizontalAlignment="Center">
+            <StackPanel Width="350" HorizontalAlignment="Center" VerticalAlignment="Center" >
+
+                <TextBlock Text="Launcher" FontWeight="Bold" FontSize="20" TextAlignment="Center" Margin="0,0,0,20"/>
+
+                <StackPanel Margin="0,0,0,10">
+                    <TextBlock Text="Versión instalada:" FontWeight="SemiBold"/>
+                    <TextBlock Text="{Binding InstalledVersion}" Margin="5,2,0,10"/>
+
+                    <TextBlock Text="Última versión disponible:" FontWeight="SemiBold"/>
+                    <TextBlock Text="{Binding LatestVersion}" Margin="5,2,0,10"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,10">
+                    <Button Content="Descargar actualización" Width="140" Command="{Binding NavigateToDownloadCommand}" Margin="0,0,10,0"/>
+                    <Button Content="Lanzar aplicación" Width="140" Command="{Binding LaunchAppCommand}"/>
+                </StackPanel>
+
+                <Button Content="Cerrar sesión" Width="140" HorizontalAlignment="Center" Command="{Binding LogoutCommand}" Margin="0,10,0,0"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</UserControl>
+

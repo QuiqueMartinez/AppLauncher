@@ -1,0 +1,28 @@
+﻿<UserControl x:Class="AppLauncher.Views.LoginView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Grid FocusManager.FocusedElement="{Binding RelativeSource={RelativeSource Self}}"
+          Focusable="True"
+          FocusManager.IsFocusScope="True">
+
+        <Border Padding="20" CornerRadius="8" Background="#F8F8F8" BorderBrush="#DDD" BorderThickness="1"
+                VerticalAlignment="Center" HorizontalAlignment="Center">
+            <StackPanel Width="300" HorizontalAlignment="Center" VerticalAlignment="Center">
+
+                <TextBlock Text="Iniciar sesión" FontWeight="Bold" FontSize="20" TextAlignment="Center" Margin="0,0,0,20"/>
+
+                <TextBlock Text="Usuario" Margin="0,0,0,5"/>
+                <TextBox Text="{Binding Username, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,0,15"/>
+
+                <TextBlock Text="Contraseña" Margin="0,0,0,5"/>
+                <PasswordBox PasswordChanged="PasswordBox_PasswordChanged" Margin="0,0,0,20"/>
+
+                <Button Content="Iniciar sesión" Command="{Binding LoginCommand}" Width="150" HorizontalAlignment="Center"/>
+            </StackPanel>
+        </Border>
+
+        <TextBlock Text="User: admin Pwd: admin" FontSize="10" Foreground="Gray"
+                   VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="5"/>
+    </Grid>
+</UserControl>
